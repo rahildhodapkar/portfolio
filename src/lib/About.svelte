@@ -5,9 +5,19 @@
       
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero delectus
-      repudiandae, totam in culpa modi mollitia neque ipsa! Aspernatur nesciunt
-      totam placeat quam, dolore nisi quaerat officia voluptatum facere optio.
+      Rahil Dhodapkar is a current senior student attending Rutgers University-New Brunswick. In his time at Rutgers, he has
+      taken courses concerning deep learning, systems programming, and algorithmic design, among others. He is set to graduate in May 2025
+      with a 4.0/4.0 GPA.
+    </p>
+    <p>
+      He has experience as a professional software engineer, having worked at Rocket Pharmaceuticals from May 2023 to February 2024. There,
+      he engineered a robust SOAP API application that showcased the company's financial and inventory reports.
+      The skills Rahil learned on the job include backend design with Spring Boot and PostgreSQL, frontend design with JS/HTML/CSS, Azure, and 
+      effective cross-functional collaboration with various company teams, such as supply chain.
+    </p>
+    <p>
+      In his free time, Rahil enjoys learning the guitar, watching movies, and playing Overwatch (even though he never wins a game).
+      His favorite sports team is the Miami Heat.
     </p>
   </div>
 </main>

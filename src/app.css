@@ -66,4 +66,5 @@ html,
 body {
   font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
+  background-color: var(--black);
 }
