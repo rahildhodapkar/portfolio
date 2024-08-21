@@ -1,26 +1,23 @@
 <script>
-  import pic from "../assets/my_pic_one.jpg";
+  import pic from "../assets/my_pic_two.jpg"
 </script>
 
 <main>
-  <div id="about">
-    <h3>ABOUT</h3>
+  <div id="experience">
+    <h3>Experience</h3>
     <div class="content">
-      <img src={pic} alt="Me at a museum's sports science exhibition" />
+      <img src={pic} alt="Me playing a game at the arcade" />
       <div>
         <p>
-          Coding is something that I love and strive to get better at. While I
-          am currently in the web development world, my goal is to work more
-          with low-level languages, like C. It's very appealing to understand
-          and work with software with relatively little abstraction. This
-          upcoming fall, I am going to spend more time working with assembly and
-          C, and in the spring I plan on learning either Rust or C++.
+          I am a current senior student attending Rutgers University-New Brunswick. In my time at Rutgers, I have
+          taken courses concerning deep learning, systems programming, and algorithmic design, among others. I am set to graduate in May 2025
+          with a 4.0/4.0 GPA.
         </p>
         <p>
-          Outside of coding, I enjoy playing Overwatch (even though I never win
-          a game), watching movies, and learning the guitar. I am also a huge
-          fan of both the UFC and the NBA. My favorite fighter has to be Israel
-          Adesanya, and my favorite basketball team is the Miami Heat.
+          I have experience as a professional software engineer, having worked at Rocket Pharmaceuticals from May 2023 to February 2024. There,
+          I engineered a robust SOAP API application that showcased the company's financial and inventory reports.
+          The skills I learned on the job include backend design with Spring Boot and PostgreSQL, frontend design with JS/HTML/CSS, Azure, and
+          effective cross-functional collaboration with various company teams, such as supply chain.
         </p>
       </div>
     </div>
@@ -28,7 +25,7 @@
 </main>
 
 <style>
-  #about {
+  #experience {
     background-color: var(--black);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,14 +34,14 @@
     padding-bottom: 3rem;
   }
 
-  #about img {
+  #experience img {
     min-width: 200px;
     width: 25%;
     height: auto;
     border-radius: 15px;
   }
 
-  #about .content {
+  #experience .content {
     margin-top: 1rem;
     grid-column: span 2;
     display: flex;
@@ -53,7 +50,7 @@
     gap: 2rem;
   }
 
-  #about .content div {
+  #experience .content div {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -77,18 +74,18 @@
   }
 
   @media (max-width: 1024px) {
-    #about .content {
+    #experience .content {
       flex-direction: column;
       align-items: center;
       text-align: center;
     }
 
-    #about img {
+    #experience img {
       width: 50%;
       margin-bottom: 1rem;
     }
 
-    #about .content div {
+    #experience .content div {
       width: 100%;
     }
 

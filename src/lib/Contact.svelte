@@ -2,7 +2,12 @@
   <div id="contact">
     <h3>CONTACT</h3>
     <div class="contacts">
-      <span>
+      <h5>Thank you for checking my portfolio out!</h5>
+      <p>
+        If you would like to contact me, please feel free to reach out via email or
+        LinkedIn.
+      </p>
+      <div>
         <a
           href="mailto:rahildhodapkar@gmail.com"
           rel="noopener noreferrer"
@@ -13,8 +18,6 @@
             /></svg
           ></a
         >
-      </span>
-      <span>
         <a
           href="https://www.linkedin.com/in/rahildhodapkar/"
           rel="noopener noreferrer"
@@ -26,7 +29,7 @@
             ></path>
           </svg>
         </a>
-      </span>
+      </div>
     </div>
   </div>
 </main>
@@ -49,13 +52,25 @@
   .contacts {
     margin-block: 3rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contacts div {
+    display: flex;
     gap: 2rem;
   }
 
-  span {
+  h5,
+  p {
     color: var(--orange-50);
     font-weight: 300;
-    max-width: 66ch;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 1.5rem;
   }
 
   a svg {
