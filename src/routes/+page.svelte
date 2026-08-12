@@ -50,6 +50,8 @@
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={ogImage} />
 
+	<!-- schemaJson contains only local constants; raw HTML is required for valid JSON-LD in Svelte 5. -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 	{@html `<script type="application/ld+json">${schemaJson}</scr` + 'ipt>'}
 </svelte:head>
 

@@ -11,6 +11,8 @@
 <nav aria-label="Primary">
 	<ul>
 		{#each links as link (link.href)}
+			<!-- Fragment links stay on this page and intentionally bypass route resolution. -->
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<li><a href={link.href}>{link.label}</a></li>
 		{/each}
 	</ul>
