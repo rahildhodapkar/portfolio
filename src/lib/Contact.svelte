@@ -1,6 +1,5 @@
-<main>
-  <div id="contact">
-    <h3>CONTACT</h3>
+<section id="contact">
+    <h2>CONTACT</h2>
     <div class="contacts">
       <h5>Thank you for checking my portfolio out!</h5>
       <p>
@@ -10,6 +9,7 @@
       <div>
         <a
           href="mailto:rahildhodapkar@gmail.com"
+          aria-label="Email Rahil Dhodapkar"
           rel="noopener noreferrer"
           target="_blank"
           ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
@@ -20,6 +20,7 @@
         >
         <a
           href="https://www.linkedin.com/in/rahildhodapkar/"
+          aria-label="Rahil Dhodapkar on LinkedIn"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -31,8 +32,7 @@
         </a>
       </div>
     </div>
-  </div>
-</main>
+</section>
 
 <style>
   #contact {
@@ -41,7 +41,7 @@
     place-items: center;
   }
 
-  h3 {
+  h2 {
     font-size: 3rem;
     font-weight: 300;
     color: var(--orange-500);

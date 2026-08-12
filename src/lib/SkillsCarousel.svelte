@@ -1,9 +1,8 @@
-<main>
-    <div class="marquee-header-container">
-      <h3>
-        SKILLS
-      </h3>
-    </div>
+<div class="marquee-header-container">
+    <h2>
+      SKILLS
+    </h2>
+  </div>
     <div class="marquee">
       <div class="marquee-group">
         <span>HTML</span>
@@ -36,7 +35,6 @@
         <span>PostgreSQL</span>
       </div>
     </div>
-</main>
 
 <style>
 
@@ -53,7 +51,7 @@
     padding-bottom: 4rem;
   }
 
-  h3 {
+  h2 {
     font-size: 3rem;
     font-weight: 300;
     color: var(--orange-500);
@@ -102,6 +100,12 @@
     }
     to {
       transform: translateX(calc(-100% - 1rem));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-group {
+      animation: none;
     }
   }
 </style>

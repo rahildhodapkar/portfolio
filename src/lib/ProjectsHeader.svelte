@@ -1,10 +1,6 @@
-<script></script>
-
-<main>
-  <div class="projects-header-container">
-    <h3>PROJECTS</h3>
-  </div>
-</main>
+<div class="projects-header-container">
+  <h2>PROJECTS</h2>
+</div>
 
 <style>
   .projects-header-container {
@@ -13,7 +9,7 @@
     place-items: center;
   }
 
-  h3 {
+  h2 {
     font-size: 3rem;
     font-weight: 300;
     color: var(--orange-500);

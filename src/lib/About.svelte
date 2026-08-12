@@ -1,10 +1,9 @@
-<script>
+<script lang="ts">
   import pic from "../assets/my_pic_one.jpg";
 </script>
 
-<main>
-  <div id="about">
-    <h3>ABOUT</h3>
+<section id="about">
+    <h2>ABOUT</h2>
     <div class="content">
       <img src={pic} alt="Me at a museum's sports science exhibition" />
       <div>
@@ -24,8 +23,7 @@
         </p>
       </div>
     </div>
-  </div>
-</main>
+</section>
 
 <style>
   #about {
@@ -60,7 +58,7 @@
     align-items: center;
   }
 
-  h3 {
+  h2 {
     font-size: 3rem;
     font-weight: 300;
     color: var(--orange-500);

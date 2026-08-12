@@ -67,4 +67,47 @@ body {
   font-family: 'Noto Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
   background-color: var(--black);
+  color: var(--orange-50);
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--orange-500);
+  outline-offset: 2px;
+}
+
+a, button {
+  transition: all 0.3s ease;
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.3);
+  color: var(--orange-50);
+}
+
+p {
+  line-height: 1.7;
+  font-size: clamp(1rem, 1vw + 0.7rem, 1.2rem);
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/* Keep anchor targets visible below the fixed nav. */
+[id] {
+  scroll-margin-top: 4rem;
 }

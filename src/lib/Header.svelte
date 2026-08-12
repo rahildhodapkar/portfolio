@@ -1,10 +1,9 @@
-<script>
+<script lang="ts">
   import portfolioImgPng from "../assets/portfolio-img.png";
   import portfolioImgWebp from "../assets/portfolio-img.webp";
 </script>
 
-<main>
-  <header id="home">
+<header id="home">
     <figure>
       <picture>
         <source srcset={portfolioImgWebp} type="image/webp" />
@@ -27,8 +26,7 @@
         </ul>
       </figcaption>
     </figure>
-  </header>
-</main>
+</header>
 
 <style>
   .squiggly-circle-one {

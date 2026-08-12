@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import snake from "../assets/snake.png";
   import hueboy from "../assets/hueboy.png";
   import nutron from "../assets/nutron.png";
@@ -7,14 +7,17 @@
 
   const mdDevWidthPx = 768;
 
-  const handleClick = (e) => {
-    if (e.target.tagName === "A" || e.target.closest("a")) {
-      return; 
+  const handleClick = (event: MouseEvent) => {
+    const target = event.target;
+    if (target instanceof Element && target.closest("a")) {
+      return;
     }
 
-    const content = e.currentTarget.querySelector(".list-item-content");
+    const content = event.currentTarget instanceof HTMLElement
+      ? event.currentTarget.querySelector(".list-item-content")
+      : null;
     if (window.innerWidth >= mdDevWidthPx) {
-      content.classList.toggle("invisible");
+      content?.classList.toggle("invisible");
     }
   };
 </script>
@@ -22,7 +25,7 @@
 <main>
   <div class="list-container">
     <div class="list">
-      <button on:click={handleClick} class="list-item">
+      <button onclick={handleClick} class="list-item">
         <span aria-hidden="true">00</span>
         <h4>Fullstack Fitness and Nutrition Tracker</h4>
         <span class="expand-icon"></span>
@@ -41,6 +44,7 @@
           </p>
           <a
             href="https://github.com/rahildhodapkar/nutrition-app"
+            aria-label="View the nutrition-app project on GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,7 +62,7 @@
           </a>
         </div>
       </button>
-      <button on:click={handleClick} class="list-item">
+      <button onclick={handleClick} class="list-item">
         <span aria-hidden="true">01</span>
         <h4>Hueboy - a CSS Gradient Generator</h4>
         <span class="expand-icon"></span>
@@ -74,6 +78,7 @@
           </p>
           <a
             href="https://github.com/rahildhodapkar/hueboy"
+            aria-label="View the hueboy project on GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +96,7 @@
           </a>
         </div>
       </button>
-      <button on:click={handleClick} class="list-item">
+      <button onclick={handleClick} class="list-item">
         <span aria-hidden="true">02</span>
         <h4>Self-Playing Snake Game</h4>
         <span class="expand-icon"></span>
@@ -107,6 +112,7 @@
           </p>
           <a
             href="https://github.com/rahildhodapkar/snake-shortest-path"
+            aria-label="View the snake-shortest-path project on GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -124,7 +130,7 @@
           </a>
         </div>
       </button>
-      <button on:click={handleClick} class="list-item">
+      <button onclick={handleClick} class="list-item">
         <span aria-hidden="true">03</span>
         <h4>Solving Minesweeper Through Neural Networks</h4>
         <span class="expand-icon"></span>
@@ -141,6 +147,7 @@
           </p>
           <a
             href="https://github.com/rahildhodapkar/minesweeper-nn"
+            aria-label="View the minesweeper-nn project on GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -158,7 +165,7 @@
           </a>
         </div>
       </button>
-      <button on:click={handleClick} class="list-item">
+      <button onclick={handleClick} class="list-item">
         <span aria-hidden="true">04</span>
         <h4>Matrix Multiplication and Determinant Calculator</h4>
         <span class="expand-icon"></span>
@@ -174,6 +181,7 @@
           </p>
           <a
             href="https://github.com/rahildhodapkar/matrix-multi-det"
+            aria-label="View the matrix-multi-det project on GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >

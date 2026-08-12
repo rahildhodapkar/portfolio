@@ -1,16 +1,14 @@
-<script>
+<script lang="ts">
   import ProjectsHeader from "./ProjectsHeader.svelte";
   import ProjectsList from "./ProjectsList.svelte";
   import SkillsCarousel from "./SkillsCarousel.svelte";
 </script>
 
-<main>
-  <div id="projects">
+<section id="projects">
     <ProjectsHeader />
     <ProjectsList />
     <SkillsCarousel />
-  </div>
-</main>
+</section>
 
 <style>
   #projects {
