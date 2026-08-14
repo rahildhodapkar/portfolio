@@ -30,21 +30,21 @@
 
 <style>
   .squiggly-circle-one {
-    width: max(30vw, 20vh);
+    width: min(max(30vw, 20vh), calc(var(--img-h) * 0.5));
     aspect-ratio: 1;
     border: 2px solid var(--orange-500);
     border-radius: 30% 50% 60% 50% / 70% 40% 50% 60%;
   }
 
   .squiggly-circle-two {
-    width: max(35vw, 25vh);
+    width: min(max(35vw, 25vh), calc(var(--img-h) * 0.58));
     aspect-ratio: 1;
     border: 2px solid var(--orange-300);
     border-radius: 40% 60% 50% 70% / 50% 40% 60% 70%;
   }
 
   .squiggly-circle-three {
-    width: max(40vw, 30vh);
+    width: min(max(40vw, 30vh), calc(var(--img-h) * 0.66));
     aspect-ratio: 1;
     border: 2px solid var(--orange-100);
     border-radius: 50% 70% 40% 60% / 60% 70% 50% 40%;
@@ -95,6 +95,8 @@
     background: var(--black);
     height: 100svh;
     position: relative;
+    overflow: hidden;
+    --img-h: min(calc(100svh - 4rem), 133.333svw);
   }
 
   figcaption {
@@ -104,7 +106,7 @@
   }
 
   picture img {
-    max-height: 100svh;
+    max-height: calc(100svh - 4rem);
     max-width: 100svw;
     height: auto;
     width: auto;
